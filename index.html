@@ -192,7 +192,7 @@
 
     <div class="effective-date">
         <strong>Effective Date:</strong> May 21, 2026<br>
-        <strong>Last Updated:</strong> May 21, 2026
+        <strong>Last Updated:</strong> May 22, 2026
     </div>
 
     <!-- 1. Introduction -->
@@ -246,13 +246,15 @@
     </ul>
 
     <h3>3.2 Data Collected by Third-Party Services</h3>
-    <p>TubeMinder uses <strong>Google AdMob</strong> to display advertisements. AdMob may collect and process certain data to serve relevant ads, including:</p>
+    <p>TubeMinder uses <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display advertisements. AdMob automatically collects and processes certain data, including:</p>
     <ul>
-        <li>Device information (device model, operating system version)</li>
-        <li>Advertising ID (Google Advertising ID)</li>
-        <li>IP address (for approximate location-based ad targeting)</li>
-        <li>App usage data related to ad interactions (ad views, clicks)</li>
+        <li><strong>Device &amp; Account Identifiers:</strong> Android advertising ID (ad ID), app set ID, and identifiers tied to signed-in accounts on the device.</li>
+        <li><strong>IP Address:</strong> Used to estimate the general location of the device for ad targeting.</li>
+        <li><strong>User Product Interactions:</strong> App launch, taps, video views, and other interaction information related to ads.</li>
+        <li><strong>Diagnostic Information:</strong> Performance data such as app launch time, hang rate, and energy usage.</li>
     </ul>
+    <p>This data is collected for the purposes of <strong>advertising, analytics, and fraud prevention</strong>. All data collected by the Google Mobile Ads SDK is <strong>encrypted in transit</strong> using the Transport Layer Security (TLS) protocol.</p>
+    <p>The Android advertising ID is optional — users can reset or delete their advertising ID through device settings (<strong>Settings &gt; Google &gt; Ads</strong>), and users can opt out of personalized ads.</p>
     <p>This data is collected and processed by Google in accordance with
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and
         <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's Partner Policy</a>.
@@ -290,7 +292,7 @@
     <ul>
         <li><strong>YouTube Thumbnail Images:</strong> Fetching video thumbnail images from YouTube's public image servers (i.ytimg.com) to display alongside your reminders.</li>
         <li><strong>Playlist Information:</strong> Fetching publicly available playlist data from YouTube when you import a playlist.</li>
-        <li><strong>Advertisements:</strong> Loading and displaying ads through Google AdMob. Ad content is served from Google's ad network servers.</li>
+        <li><strong>Advertisements:</strong> Loading and displaying ads through Google AdMob. Ad content is served from Google's ad network servers. This includes transmitting device identifiers, IP address, user interaction data, and diagnostic information to Google for advertising, analytics, and fraud prevention purposes.</li>
     </ul>
     <p>Your personal reminder data is never transmitted over the internet. The internet connection is used for fetching publicly available YouTube content and for serving advertisements.</p>
 
@@ -316,13 +318,14 @@
     <!-- 7. Data Sharing -->
     <h2><span class="section-num">7.</span> Data Sharing with Third Parties</h2>
     <h3>7.1 Google AdMob (Advertising)</h3>
-    <p>TubeMinder uses <strong>Google AdMob</strong> to display advertisements. Through AdMob, Google may collect and use data to serve personalized or non-personalized ads. This may include:</p>
+    <p>TubeMinder uses <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display advertisements. Through AdMob, Google automatically collects and shares the following data for advertising, analytics, and fraud prevention purposes:</p>
     <ul>
-        <li>Device advertising identifier (Google Advertising ID)</li>
+        <li>Device and account identifiers (Android advertising ID, app set ID)</li>
         <li>IP address</li>
-        <li>Device and app information</li>
-        <li>Ad interaction data</li>
+        <li>User product interactions (app launch, taps, video views)</li>
+        <li>Diagnostic information (performance data)</li>
     </ul>
+    <p>All data collected by AdMob is <strong>encrypted in transit</strong> using TLS. The Android advertising ID is optional and can be reset or deleted by the user through device settings.</p>
     <p>For more information about how Google uses data, please visit:
         <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.
     </p>
@@ -369,7 +372,7 @@
         <tbody>
             <tr>
                 <td><code>INTERNET</code></td>
-                <td>Fetch YouTube video thumbnails and playlist metadata from public YouTube servers.</td>
+                <td>Fetch YouTube video thumbnails, playlist metadata, and load advertisements via Google AdMob.</td>
             </tr>
             <tr>
                 <td><code>POST_NOTIFICATIONS</code></td>
@@ -445,32 +448,42 @@
     <table class="info-table">
         <tr>
             <th>Data Collected</th>
-            <td>No user data collected by us directly. Google AdMob may collect device and ad interaction data.</td>
+            <td>No user data collected by us directly. Google AdMob (Google Mobile Ads SDK) automatically collects: device &amp; account identifiers (ad ID, app set ID), IP address, user product interactions, and diagnostic information — for advertising, analytics, and fraud prevention.</td>
         </tr>
         <tr>
             <th>Data Shared</th>
-            <td>Ad-related data shared with Google AdMob for advertising purposes only.</td>
+            <td>Ad-related data (device identifiers, IP address, interaction data, diagnostics) shared with Google AdMob for advertising, analytics, and fraud prevention purposes.</td>
         </tr>
         <tr>
             <th>Data Storage</th>
-            <td><span class="badge badge-local">Local device storage only</span> (reminder data)</td>
+            <td><span class="badge badge-local">Local device storage only</span> (reminder data, watch history, settings)</td>
         </tr>
         <tr>
             <th>Encryption</th>
-            <td>Data is protected by Android's app sandbox security model</td>
+            <td>Reminder data is protected by Android's app sandbox security model. AdMob data is encrypted in transit using TLS.</td>
         </tr>
         <tr>
             <th>Data Deletion</th>
-            <td>Users can delete data within the App, clear app data, or uninstall</td>
+            <td>Users can delete data within the App, clear app data, or uninstall. Ad ID can be reset or deleted via device settings.</td>
         </tr>
         <tr>
             <th>Third-Party SDKs</th>
-            <td>Google AdMob (advertising). No analytics or tracking SDKs.</td>
+            <td>Google AdMob / Google Mobile Ads SDK (advertising). No analytics, crash reporting, or tracking SDKs.</td>
         </tr>
     </table>
 
-    <!-- 14. Changes to Policy -->
-    <h2><span class="section-num">14.</span> Changes to This Privacy Policy</h2>
+    <!-- 14. Legal Basis -->
+    <h2><span class="section-num">14.</span> Legal Basis &amp; International Users</h2>
+    <p>If you are located in the European Economic Area (EEA), United Kingdom, or other regions with data protection laws:</p>
+    <ul>
+        <li><strong>Consent:</strong> Where required by law, we rely on your consent for data processing by third-party advertising services (Google AdMob). You may be presented with a consent dialog when the App is first launched.</li>
+        <li><strong>Legitimate Interest:</strong> We process locally stored data (reminders, watch history) based on our legitimate interest in providing the App's core functionality.</li>
+        <li><strong>Ad Personalization:</strong> You can opt out of personalized ads at any time through your device settings (<strong>Settings &gt; Google &gt; Ads</strong>). Non-personalized ads will still be shown.</li>
+    </ul>
+    <p>TubeMinder is available globally. Regardless of your location, we apply the same privacy protections to all users.</p>
+
+    <!-- 15. Changes to Policy -->
+    <h2><span class="section-num">15.</span> Changes to This Privacy Policy</h2>
     <p>
         We may update this Privacy Policy from time to time to reflect changes in the App's functionality or applicable regulations. Any changes will be posted on this page with an updated "Last Updated" date at the top.
     </p>
@@ -478,8 +491,8 @@
         We encourage you to review this Privacy Policy periodically. Continued use of the App after any modifications constitutes your acceptance of the updated Privacy Policy.
     </p>
 
-    <!-- 15. Contact -->
-    <h2><span class="section-num">15.</span> Contact Us</h2>
+    <!-- 16. Contact -->
+    <h2><span class="section-num">16.</span> Contact Us</h2>
     <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
 
     <div class="contact-card">
