@@ -192,7 +192,8 @@
 
     <div class="effective-date">
         <strong>Effective Date:</strong> May 21, 2026<br>
-        <strong>Last Updated:</strong> June 1, 2026
+        <strong>Last Updated:</strong> June 8, 2026<br>
+        <strong>Version:</strong> 2.0
     </div>
 
     <!-- 1. Introduction -->
@@ -340,6 +341,28 @@
         <li>Send any of your reminder data, watch history, or personal information to any server.</li>
     </ul>
 
+    <h3>7.3 Other Third-Party Libraries (Non-Tracking)</h3>
+    <p>TubeMinder uses the following open-source libraries that do <strong>not</strong> collect, transmit, or share user data:</p>
+    <ul>
+        <li><strong>Coil (Image Loading):</strong> Used to fetch and cache YouTube thumbnail images. Coil makes anonymous HTTP requests to YouTube's public image servers (<code>i.ytimg.com</code>, <code>img.youtube.com</code>) and stores the results in a local cache. No personal data is sent.</li>
+        <li><strong>Jetpack Compose, Room, AndroidX:</strong> Standard Google Android UI and database libraries, fully on-device with no network communication.</li>
+        <li><strong>Jetpack Glance:</strong> Used to render the home-screen widgets, fully on-device.</li>
+        <li><strong>Kotlin Coroutines:</strong> Used for background processing, fully on-device.</li>
+    </ul>
+
+    <h3>7.4 Artificial Intelligence (AI) &amp; Machine Learning (ML)</h3>
+    <div class="highlight-box green">
+        <strong>TubeMinder does NOT use any generative AI, large language models (LLMs), or machine learning models.</strong>
+    </div>
+    <p>Specifically, the App does not:</p>
+    <ul>
+        <li>Send any user input to AI services such as ChatGPT, Gemini, Claude, or similar.</li>
+        <li>Use on-device or cloud-based ML models to analyze your reminders, watch history, or behavior.</li>
+        <li>Generate AI-driven recommendations, summaries, or suggestions.</li>
+        <li>Process your data for AI training purposes.</li>
+    </ul>
+    <p>The "Smart" features in the App (smart time presets, automatic playlist scheduling, video title fetching) are based purely on simple deterministic logic — date/time arithmetic and standard regex/HTTP requests — not on AI or ML.</p>
+
     <!-- 8. Data Retention & Deletion -->
     <h2><span class="section-num">8.</span> Data Retention &amp; Deletion</h2>
     <h3>8.1 Retention</h3>
@@ -349,14 +372,43 @@
         <li>You choose to keep the data within the App.</li>
     </ul>
 
-    <h3>8.2 Deletion</h3>
+    <h3>8.2 Account Deletion</h3>
+    <div class="highlight-box green">
+        <strong>TubeMinder does not require any user account, login, or registration.</strong> We do not create or maintain any user accounts on our servers. There is nothing to "delete" on our side because we do not have any user accounts or any data stored on remote servers.
+    </div>
+    <p>This means:</p>
+    <ul>
+        <li>You do not need to submit any account deletion request to us.</li>
+        <li>All your data exists only on your device.</li>
+        <li>Removing data from your device permanently and irreversibly deletes it.</li>
+    </ul>
+
+    <h3>8.3 Deletion of Your Data</h3>
     <p>You have complete control over your data. You can delete your data at any time through the following methods:</p>
     <ul>
-        <li><strong>Within the App:</strong> Delete individual reminders by swiping or using the delete option. Clear watch history through the app interface.</li>
-        <li><strong>Clear App Data:</strong> Go to your device's Settings &gt; Apps &gt; TubeMinder &gt; Storage &gt; Clear Data. This removes all app data.</li>
+        <li><strong>Within the App:</strong> Delete individual reminders by swiping or using the delete option. Clear watch history through the app interface. Use Settings &gt; Backup &amp; Restore to manage data.</li>
+        <li><strong>Clear App Data:</strong> Go to your device's <strong>Settings &gt; Apps &gt; TubeMinder &gt; Storage &gt; Clear Data</strong>. This removes all app data including reminders, watch history, and settings.</li>
         <li><strong>Uninstall the App:</strong> Uninstalling TubeMinder automatically removes all associated data from your device.</li>
+        <li><strong>Reset Advertising ID:</strong> Reset or delete your Android advertising ID through <strong>Settings &gt; Google &gt; Ads</strong>.</li>
     </ul>
     <p>Since no data is stored on external servers, deletion from your device means the data is permanently and irreversibly removed.</p>
+
+    <h3>8.4 Data Breach Notification</h3>
+    <p>
+        Because TubeMinder does not collect or store any personal data on remote servers, the risk of a server-side data breach is effectively zero on our end.
+    </p>
+    <p>
+        However, in the unlikely event we become aware of any security incident affecting users, we will:
+    </p>
+    <ul>
+        <li>Notify affected users without undue delay (within 72 hours where feasible, in line with GDPR Article 33 standards).</li>
+        <li>Post a notice on this Privacy Policy page describing the nature of the incident, the data potentially affected, and any steps users should take.</li>
+        <li>Notify the relevant data protection authorities where required by law.</li>
+        <li>Cooperate fully with applicable regulatory investigations.</li>
+    </ul>
+    <p>
+        For any security concerns related to TubeMinder, please email <a href="mailto:nonytoons2011@gmail.com">nonytoons2011@gmail.com</a> with the subject line "Security Concern".
+    </p>
 
     <!-- 9. Permissions -->
     <h2><span class="section-num">9.</span> App Permissions</h2>
@@ -474,13 +526,85 @@
 
     <!-- 14. Legal Basis -->
     <h2><span class="section-num">14.</span> Legal Basis &amp; International Users</h2>
-    <p>If you are located in the European Economic Area (EEA), United Kingdom, or other regions with data protection laws:</p>
+    <p>TubeMinder is available globally. Regardless of your location, we apply the same privacy protections to all users. The following sections describe additional rights for users in specific jurisdictions.</p>
+
+    <h3>14.1 European Economic Area (EEA), United Kingdom &amp; Switzerland — GDPR / UK GDPR</h3>
+    <p>If you are located in the EEA, UK, or Switzerland, the following legal bases apply under the General Data Protection Regulation (GDPR) and UK GDPR:</p>
     <ul>
-        <li><strong>Consent:</strong> Where required by law, we rely on your consent for data processing by third-party advertising services (Google AdMob). You may be presented with a consent dialog when the App is first launched.</li>
-        <li><strong>Legitimate Interest:</strong> We process locally stored data (reminders, watch history) based on our legitimate interest in providing the App's core functionality.</li>
-        <li><strong>Ad Personalization:</strong> You can opt out of personalized ads at any time through your device settings (<strong>Settings &gt; Google &gt; Ads</strong>). Non-personalized ads will still be shown.</li>
+        <li><strong>Consent (Article 6(1)(a)):</strong> For data processed by Google AdMob for personalized advertising. You may be presented with a Google UMP (User Messaging Platform) consent dialog when the App is first launched.</li>
+        <li><strong>Legitimate Interest (Article 6(1)(f)):</strong> For locally stored data (reminders, watch history, settings) processed solely on your device for the App's core functionality.</li>
+        <li><strong>Contractual Necessity (Article 6(1)(b)):</strong> For features you actively use, such as scheduling reminders and importing playlists.</li>
     </ul>
-    <p>TubeMinder is available globally. Regardless of your location, we apply the same privacy protections to all users.</p>
+    <p><strong>Your GDPR rights include:</strong></p>
+    <ul>
+        <li>Right to access, rectify, erase, restrict, or object to processing of your data.</li>
+        <li>Right to data portability (use the in-App Backup feature to export your data).</li>
+        <li>Right to lodge a complaint with your local supervisory authority (e.g., the ICO in the UK).</li>
+        <li>Right to withdraw consent at any time through device settings or by clearing app data.</li>
+    </ul>
+
+    <h3>14.2 India — Digital Personal Data Protection Act, 2023 (DPDP Act)</h3>
+    <p>If you are located in India, the following applies under the Digital Personal Data Protection Act, 2023:</p>
+    <ul>
+        <li><strong>Notice &amp; Consent:</strong> This Privacy Policy serves as the notice required under Section 5 of the DPDP Act. By using the App, you provide your consent for the processing described herein.</li>
+        <li><strong>Purpose Limitation:</strong> Your data is processed only for the specific purposes described in Section 4 of this policy.</li>
+        <li><strong>Data Minimization:</strong> We collect no personal data ourselves; only Google AdMob collects the limited data described in Section 3.2.</li>
+        <li><strong>Your Rights as a Data Principal:</strong>
+            <ul>
+                <li>Right to access information about your personal data.</li>
+                <li>Right to correction and erasure of your personal data.</li>
+                <li>Right of grievance redressal — contact us at <a href="mailto:nonytoons2011@gmail.com">nonytoons2011@gmail.com</a>.</li>
+                <li>Right to nominate another individual to exercise your rights in case of death or incapacity.</li>
+                <li>Right to withdraw consent at any time.</li>
+            </ul>
+        </li>
+        <li><strong>Children's Data:</strong> The App is not directed at children under 18 in India. We do not knowingly process the personal data of children as defined under the DPDP Act.</li>
+    </ul>
+
+    <h3>14.3 California, USA — CCPA / CPRA</h3>
+    <p>If you are a California resident, the California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA), grants you the following rights:</p>
+    <ul>
+        <li><strong>Right to Know:</strong> You have the right to know what personal information is collected, used, shared, or sold. As described in this policy, TubeMinder itself collects no personal information; Google AdMob collects the limited categories listed in Section 3.2.</li>
+        <li><strong>Right to Delete:</strong> You can delete data via the App, by clearing app data, or by uninstalling.</li>
+        <li><strong>Right to Correct:</strong> All your data is editable directly within the App.</li>
+        <li><strong>Right to Opt-Out of Sale or Sharing:</strong> <strong>We do not sell or share your personal information for cross-context behavioral advertising</strong> in the manner defined by CCPA/CPRA. You may still configure ad personalization through your device settings.</li>
+        <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We do not collect or use any sensitive personal information.</li>
+        <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising any CCPA/CPRA rights.</li>
+        <li><strong>Authorized Agent:</strong> You may designate an authorized agent to make a request on your behalf by contacting us via the email below.</li>
+    </ul>
+    <p><strong>Categories of personal information collected (CCPA categorization):</strong> Identifiers (advertising ID, IP address — by AdMob only), Internet/network activity (interaction with ads — by AdMob only). No other categories are collected.</p>
+    <p>To exercise your California rights, contact us at <a href="mailto:nonytoons2011@gmail.com">nonytoons2011@gmail.com</a>. We will verify your request and respond within 45 days as required by law.</p>
+
+    <h3>14.4 Other US State Privacy Laws</h3>
+    <p>We respect the privacy rights granted to residents of other US states with comprehensive privacy laws, including (as of 2026):</p>
+    <ul>
+        <li>Virginia Consumer Data Protection Act (VCDPA)</li>
+        <li>Colorado Privacy Act (CPA)</li>
+        <li>Connecticut Data Privacy Act (CTDPA)</li>
+        <li>Utah Consumer Privacy Act (UCPA)</li>
+        <li>Texas Data Privacy and Security Act (TDPSA)</li>
+        <li>Oregon Consumer Privacy Act (OCPA)</li>
+        <li>Montana Consumer Data Privacy Act (MCDPA)</li>
+        <li>Iowa Consumer Data Protection Act</li>
+        <li>Tennessee Information Protection Act</li>
+        <li>Delaware, New Jersey, New Hampshire, Maryland, Minnesota, Rhode Island, and other applicable state privacy laws.</li>
+    </ul>
+    <p>If you are a resident of any of these states, you have the equivalent rights to access, delete, correct, and opt-out of targeted advertising. Contact us at <a href="mailto:nonytoons2011@gmail.com">nonytoons2011@gmail.com</a> to exercise these rights.</p>
+
+    <h3>14.5 Global Privacy Control (GPC) Signal</h3>
+    <p>TubeMinder honors the Global Privacy Control (GPC) signal where it is required by law. Since the App itself does not engage in the "sale" or "sharing" of personal information, the primary effect of the GPC signal applies to ad personalization, which can also be controlled through your device's <strong>Settings &gt; Google &gt; Ads</strong>.</p>
+
+    <h3>14.6 Brazil — LGPD</h3>
+    <p>If you are located in Brazil, the Lei Geral de Proteção de Dados (LGPD) grants you rights similar to GDPR, including access, correction, deletion, portability, and the right to object to data processing.</p>
+
+    <h3>14.7 Ad Personalization &amp; UMP Consent (Google AdMob)</h3>
+    <p>For users in the EEA, UK, Switzerland, and other regions where required, we use <strong>Google's User Messaging Platform (UMP)</strong> compliant with the IAB Transparency &amp; Consent Framework (TCF v2.2) to obtain consent for personalized advertising.</p>
+    <ul>
+        <li><strong>First Launch Consent Dialog:</strong> When the App is first launched in regions requiring consent, a UMP consent dialog appears explaining the use of advertising identifiers and inviting you to accept, reject, or customize your choices.</li>
+        <li><strong>Withdrawing Consent:</strong> You can withdraw or modify your consent at any time by reopening the consent dialog (where surfaced in the App settings) or by clearing the App's data.</li>
+        <li><strong>Non-Personalized Ads:</strong> If you reject personalized ads, the App will continue to show non-personalized ads, which use only minimal data (such as approximate location based on IP) and not behavioral tracking.</li>
+        <li><strong>Device-Level Opt-Out:</strong> Independent of the in-App dialog, you may opt out of ad personalization at any time through <strong>Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization</strong>.</li>
+    </ul>
 
     <!-- 15. Changes to Policy -->
     <h2><span class="section-num">15.</span> Changes to This Privacy Policy</h2>
@@ -493,14 +617,61 @@
 
     <!-- 16. Contact -->
     <h2><span class="section-num">16.</span> Contact Us</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us using the details below.</p>
+
+    <p><strong>Response Time Commitment:</strong> We aim to respond to all privacy-related inquiries within <strong>30 days</strong> of receipt. For requests under specific privacy laws (such as CCPA/CPRA, GDPR, or DPDP Act), we will respond within the legally required timeframe (typically 30–45 days, with possible extensions where permitted by law).</p>
+
+    <p>For privacy-related requests (access, deletion, correction, portability, opt-out, withdraw consent, or any other rights described in Section 14), please include the following in your email:</p>
+    <ul>
+        <li>The right you wish to exercise.</li>
+        <li>Your country/state of residence (so we can apply the correct privacy law).</li>
+        <li>Sufficient information for us to verify your identity (note: since we hold no account data, identity verification is typically minimal).</li>
+    </ul>
 
     <div class="contact-card">
         <p><strong>Developer:</strong> AiTricker</p>
         <p><strong>App:</strong> TubeMinder</p>
+        <p><strong>Privacy &amp; Grievance Officer:</strong> AiTricker (acting in this capacity)</p>
         <p><strong>Email:</strong> <a href="mailto:nonytoons2011@gmail.com">nonytoons2011@gmail.com</a></p>
+        <p><strong>Country:</strong> India</p>
         <p><strong>Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.youminder.aitricker" target="_blank" rel="noopener noreferrer">TubeMinder on Google Play</a></p>
     </div>
+
+    <!-- 17. Governing Law -->
+    <h2><span class="section-num">17.</span> Governing Law, Severability &amp; Dispute Resolution</h2>
+
+    <h3>17.1 Governing Law</h3>
+    <p>
+        This Privacy Policy is governed by and interpreted in accordance with the laws of <strong>India</strong>, without regard to its conflict-of-law principles. However, this does not deprive you of any mandatory protections granted by the privacy laws of your country or state of residence (e.g., GDPR for EEA residents, CCPA/CPRA for California residents, DPDP Act for Indian residents).
+    </p>
+
+    <h3>17.2 Jurisdiction</h3>
+    <p>
+        Any dispute arising from or relating to this Privacy Policy that cannot be resolved through the contact methods above shall be subject to the non-exclusive jurisdiction of the courts of India, except where applicable consumer protection or data protection laws grant you the right to bring proceedings in your local courts.
+    </p>
+
+    <h3>17.3 Dispute Resolution</h3>
+    <p>Before initiating any formal legal proceedings, we encourage you to:</p>
+    <ul>
+        <li>Contact us directly at <a href="mailto:nonytoons2011@gmail.com">nonytoons2011@gmail.com</a> to attempt an informal resolution.</li>
+        <li>Allow us up to 30 days to investigate and respond to your concern.</li>
+        <li>Where applicable, file a complaint with the Data Protection Board of India, your local data protection authority (e.g., the ICO in the UK), or the relevant state Attorney General (for US residents).</li>
+    </ul>
+
+    <h3>17.4 Severability</h3>
+    <p>
+        If any provision of this Privacy Policy is found to be invalid, illegal, or unenforceable by a court or regulatory authority of competent jurisdiction, that provision shall be severed from this Privacy Policy. The remaining provisions shall continue in full force and effect, and the invalid provision shall be replaced by a valid provision that most closely reflects the original intent and purpose.
+    </p>
+
+    <h3>17.5 No Waiver</h3>
+    <p>
+        Our failure to enforce any right or provision of this Privacy Policy shall not be considered a waiver of those rights. Any waiver of a provision will only be effective if made in writing and signed by us.
+    </p>
+
+    <h3>17.6 Entire Agreement</h3>
+    <p>
+        This Privacy Policy, together with the Google Play Store listing terms and any in-App notices, constitutes the entire agreement between you and us regarding privacy and data handling, and supersedes any prior privacy notices or communications.
+    </p>
 
     <div class="footer">
         &copy; 2026 AiTricker. All rights reserved.<br>
